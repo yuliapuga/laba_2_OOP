@@ -5,7 +5,6 @@ using namespace std;
 
 
 int main() {
-	//Перевірка другого класу
 
 	TRectangle a(1, 3);
 	TRectangle b;
