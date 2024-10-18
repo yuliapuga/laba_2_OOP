@@ -44,7 +44,7 @@ public:
 	}
 
 
-	//Методи для порівняння двох прямокутників, еровантаження оператора*
+	//Методи для порівняння двох прямокутників, еровантаження оператора==
 	bool operator==(const TRectangle& other) const {
 		return ((this->m_a == other.m_a) && (this->m_b == other.m_b));
 	}
@@ -52,7 +52,7 @@ public:
 
 	//Перовантаження оператора !=
 	bool operator!=(const TRectangle& other) const {
-		return ((this->m_a != other.m_a) || (this->m_b != other.m_b));
+		return !(*this==other);
 	}
 
 
